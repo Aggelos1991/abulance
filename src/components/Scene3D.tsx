@@ -1,7 +1,7 @@
 "use client";
 
-import { Canvas, useFrame } from "@react-three/fiber";
-import { useRef, useMemo } from "react";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { useRef, useMemo, useEffect, useState } from "react";
 import * as THREE from "three";
 
 function GlobeWireframe() {
@@ -149,14 +149,34 @@ function FloatingNode({
   );
 }
 
+function ResponsiveCamera() {
+  const { camera, size } = useThree();
+
+  useEffect(() => {
+    // Push camera further back on small screens so globe appears smaller
+    const z = size.width < 640 ? 11 : size.width < 768 ? 8.5 : 6;
+    camera.position.setZ(z);
+    camera.updateProjectionMatrix();
+  }, [camera, size.width]);
+
+  return null;
+}
+
 export default function Scene3D() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 640);
+  }, []);
+
   return (
     <div className="absolute inset-0 opacity-60">
       <Canvas
-        camera={{ position: [0, 0, 6], fov: 45 }}
+        camera={{ position: [0, 0, isMobile ? 11 : 6], fov: 45 }}
         gl={{ antialias: true, alpha: true }}
         style={{ background: "transparent" }}
       >
+        <ResponsiveCamera />
         <ambientLight intensity={0.5} />
         <GlobeWireframe />
         <RouteParticles />

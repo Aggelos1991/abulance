@@ -133,10 +133,10 @@ export default function Contact() {
             </form>
           )}
 
-          <div className="mt-6 pt-6 border-t border-white/5 flex flex-wrap justify-center gap-6 text-xs text-cream-200/40">
-            <span>646-772-3668</span>
+          <div className="mt-6 pt-6 border-t border-white/5 flex flex-wrap justify-center gap-x-6 gap-y-1 text-xs text-cream-200/40">
+            <a href="tel:+16467723668" className="hover:text-glow-cyan transition-colors">646-772-3668</a>
             <span>Astoria, NY 11106</span>
-            <span>646-552-1111</span>
+            <a href="tel:+16465521111" className="hover:text-glow-cyan transition-colors">646-552-1111</a>
           </div>
         </motion.div>
       </div>
