@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const cards = [
   {
@@ -48,6 +48,16 @@ const cards = [
 
 function FlipCard({ card, index }: { card: typeof cards[0]; index: number }) {
   const [flipped, setFlipped] = useState(false);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    if (flipped) {
+      timerRef.current = setTimeout(() => setFlipped(false), 7000);
+    }
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
+  }, [flipped]);
 
   return (
     <motion.div

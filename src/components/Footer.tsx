@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <a href="https://www.iqtaxi.com/newsite/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-glow-blue to-glow-cyan flex items-center justify-center shadow-md shadow-glow-blue/20">
               <svg className="w-5 h-5" viewBox="0 0 64 64" fill="none">
                 <circle cx="24" cy="14" r="5" fill="white"/>
@@ -21,7 +21,7 @@ export default function Footer() {
               </span>
               <span className="text-[9px] text-cream-200/30 tracking-widest uppercase">by IQ TAXI</span>
             </div>
-          </div>
+          </a>
 
           {/* Links */}
           <div className="flex flex-wrap justify-center gap-6 text-sm text-cream-200/40">

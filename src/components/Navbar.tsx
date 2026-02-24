@@ -35,7 +35,7 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 sm:h-20 items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3 group">
+          <a href="https://www.iqtaxi.com/newsite/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group">
             <div className="relative">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-glow-blue to-glow-cyan flex items-center justify-center shadow-lg shadow-glow-blue/30 group-hover:shadow-glow-blue/60 transition-shadow duration-300 logo-glow">
                 <svg className="w-6 h-6" viewBox="0 0 64 64" fill="none">
