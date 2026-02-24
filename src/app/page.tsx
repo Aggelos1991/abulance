@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import PhoneMockup from "@/components/PhoneMockup";
+import Platform from "@/components/Platform";
 import Integrations from "@/components/Integrations";
 import Results from "@/components/Results";
 import Testimonials from "@/components/Testimonials";
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <About />
       <PhoneMockup />
+      <Platform />
       <Integrations />
       <Results />
       <Testimonials />

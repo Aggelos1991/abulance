@@ -120,7 +120,7 @@ export default function About() {
             </span>
           </h2>
           <p className="mx-auto max-w-lg text-cream-200/60">
-            Tap or hover to learn more about each capability.
+            Tap to learn more about each capability.
           </p>
         </motion.div>
 
