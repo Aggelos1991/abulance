@@ -20,9 +20,9 @@ export default function Contact() {
     };
 
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("https://formspree.io/f/mldejgnj", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(data),
       });
 
