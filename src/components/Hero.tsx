@@ -59,7 +59,7 @@ export default function Hero() {
 
       {/* 3D Scene with parallax */}
       <motion.div style={{ y: globeY }} className="absolute inset-0 flex items-center justify-center">
-        <div className="w-full h-full max-w-3xl scale-[0.55] sm:scale-75 md:scale-100 origin-center">
+        <div className="w-full h-full max-w-3xl scale-100 sm:scale-90 md:scale-100 origin-center">
           <Scene3D />
         </div>
       </motion.div>
@@ -103,8 +103,8 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="max-w-xl text-base md:text-lg text-cream-200/60 leading-relaxed"
         >
-          AI-powered scheduling, dispatch, and billing — built for NEMT
-          providers, brokers, and transportation companies.
+          Automate scheduling, optimize routes, and manage billing
+          effortlessly — integrated with top brokers like MAS, Modivcare, and MTM.
         </motion.p>
 
         <motion.div
@@ -113,13 +113,26 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="flex flex-col sm:flex-row gap-4 items-center"
         >
+          {/* Google Play Button */}
           <a
-            href="#contact"
-            className="group relative px-8 py-3.5 text-sm font-semibold text-white bg-gradient-to-r from-glow-blue to-glow-cyan rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-glow-blue/25"
+            href="https://play.google.com/store/apps/details?id=com.iqtaxi.iqdriverMobility&hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative flex items-center justify-center gap-2.5 px-8 py-3.5 text-sm font-semibold text-white bg-gradient-to-r from-glow-blue to-glow-cyan rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-glow-blue/25"
           >
-            <span className="relative z-10">Request a Demo</span>
+            <svg className="w-5 h-5 relative z-10 shrink-0" viewBox="0 0 24 24">
+              <defs>
+                <linearGradient id="playGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="white" />
+                  <stop offset="100%" stopColor="white" />
+                </linearGradient>
+              </defs>
+              <path d="M3.609 1.814L13.792 12 3.61 22.186a1.003 1.003 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.414l2.473 1.434a1 1 0 010 1.733l-2.473 1.434-2.56-2.6 2.56-2.001zM5.864 3.458L16.8 9.79l-2.302 2.302-8.634-8.634z" fill="white" />
+            </svg>
+            <span className="relative z-10">Get the Driver App</span>
             <div className="absolute inset-0 bg-gradient-to-r from-glow-cyan to-glow-blue opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </a>
+          {/* Explore Features Button */}
           <a
             href="#features"
             className="px-8 py-3.5 text-sm font-semibold text-cream-200/70 border border-cream-200/20 rounded-full hover:border-glow-blue/40 hover:text-cream-50 transition-all duration-300"
@@ -127,38 +140,6 @@ export default function Hero() {
             Explore Features
           </a>
         </motion.div>
-
-        {/* Google Play Download Button */}
-        <motion.a
-          href="https://play.google.com/store/apps/details?id=com.iqtaxi.iqdriverMobility&hl=en"
-          target="_blank"
-          rel="noopener noreferrer"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.9 }}
-          whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(52, 168, 83, 0.4)" }}
-          whileTap={{ scale: 0.97 }}
-          className="group relative flex items-center gap-3 px-6 py-3 rounded-xl bg-black/80 border border-white/10 hover:border-white/20 transition-all duration-300 overflow-hidden"
-        >
-          {/* Animated shine sweep */}
-          <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-          {/* Google Play icon */}
-          <svg className="w-7 h-7 relative z-10 shrink-0" viewBox="0 0 24 24">
-            <defs>
-              <linearGradient id="playGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#4285F4" />
-                <stop offset="33%" stopColor="#34A853" />
-                <stop offset="66%" stopColor="#FBBC04" />
-                <stop offset="100%" stopColor="#EA4335" />
-              </linearGradient>
-            </defs>
-            <path d="M3.609 1.814L13.792 12 3.61 22.186a1.003 1.003 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.414l2.473 1.434a1 1 0 010 1.733l-2.473 1.434-2.56-2.6 2.56-2.001zM5.864 3.458L16.8 9.79l-2.302 2.302-8.634-8.634z" fill="url(#playGrad)" />
-          </svg>
-          <div className="relative z-10 flex flex-col leading-tight">
-            <span className="text-[10px] text-cream-200/60 uppercase tracking-wider">Get it on</span>
-            <span className="text-sm font-semibold text-cream-50">Google Play</span>
-          </div>
-        </motion.a>
       </motion.div>
 
       {/* Bottom fade */}

@@ -5,20 +5,24 @@ import { useState } from "react";
 
 const faqs = [
   {
-    q: "What is IQ Mobility?",
-    a: "Your all-in-one control center for non-emergency medical transportation. Scheduling, dispatching, billing, and tracking — all in one place. IQ Driver Ambulette is the dedicated driver app.",
+    q: "What is IQ Mobility Platform?",
+    a: "Your control center for non-emergency medical transportation. Scheduling, dispatching, billing, tracking — everything in one place. No more jumping between tools or spreadsheets. Providers, brokers, and drivers each get their own dedicated panel.",
   },
   {
     q: "Which brokers does it connect with?",
-    a: "Modivcare-Logisticare, MTM, Medical Answering Services (MAS), Corporate Transportation Group (CTG), and Sentry. Trips import directly into your dashboard.",
+    a: "Modivcare-Logisticare, MTM, Medical Answering Services (MAS), Corporate Transportation Group (CTG), and Sentry. Trips download automatically into your dashboard — no more copying trip data manually.",
   },
   {
-    q: "How does the AI work?",
-    a: "AI optimizes routes, assigns drivers, and keeps operations flowing. Our AI Receptionist also handles calls, books rides, and provides status updates automatically.",
+    q: "How does billing work?",
+    a: "Claims are created, formatted, and submitted automatically. The system supports broker billing, EDI, and CMS-1500. You can see what's pending, what's paid, and what needs attention — all in one view.",
+  },
+  {
+    q: "How does AI improve operations?",
+    a: "AI runs in the background — optimizing routes, assigning the right drivers, and keeping everything moving. The AI Receptionist answers calls, books rides, and gives status updates around the clock.",
   },
   {
     q: "Is there a driver app?",
-    a: "Yes — with turn-by-turn navigation, one-tap status updates, and real-time sync. Drivers see exactly where to go and what's next.",
+    a: "Yes — IQ Driver Ambulette shows where to go, what's next, and how far from pickup or drop-off. It updates everything in real time with turn-by-turn navigation and one-tap status updates.",
   },
 ];
 

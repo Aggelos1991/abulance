@@ -11,7 +11,7 @@ const cards = [
       </svg>
     ),
     front: "Smart Scheduling & Dispatch",
-    back: "Trips import automatically from brokers. AI optimizes routes, assigns drivers, and eliminates scheduling conflicts — with real-time tracking, mileage calculations, and live ETAs for every trip.",
+    back: "Minimize scheduling conflicts with real-time visibility for dispatchers. Smart algorithms and brokerage importers make trip validation fast and reliable — with live location data, mileage calculations, and ETAs.",
     gradient: "from-glow-blue to-blue-600",
   },
   {
@@ -21,7 +21,7 @@ const cards = [
       </svg>
     ),
     front: "AI Receptionist & Billing",
-    back: "Our AI answers calls, books rides, and gives status updates around the clock. Claims are created, formatted, and submitted automatically via EDI, CMS-1500, and direct broker billing.",
+    back: "Our AI Receptionist answers calls, books rides, and gives status updates around the clock. Billing just happens — claims are created, formatted, and sent off automatically via EDI, CMS-1500, and broker billing.",
     gradient: "from-purple-500 to-glow-purple",
   },
   {
@@ -31,7 +31,7 @@ const cards = [
       </svg>
     ),
     front: "Apps for Every Role",
-    back: "Provider, broker, and corporate dashboards for oversight. Driver app with turn-by-turn navigation and one-tap status. Member portal for booking rides, tracking drivers, and appointment reminders.",
+    back: "Provider, broker, and corporate panels for full operational oversight. IQ Driver Ambulette gives drivers turn-by-turn navigation and one-tap status updates. Members book rides, track drivers in real time, and get appointment reminders.",
     gradient: "from-glow-cyan to-teal-500",
   },
   {
@@ -41,7 +41,7 @@ const cards = [
       </svg>
     ),
     front: "HIPAA Compliant & Secure",
-    back: "Full HIPAA compliance baked in. Connects directly with Modivcare, MTM, MAS, CTG, and Sentry — trips download automatically into your dashboard with zero manual entry.",
+    back: "Full HIPAA compliance built into every layer. Direct integrations with Modivcare, MTM, MAS, CTG, and Sentry — trips download automatically into your dashboard with zero manual entry or copy-pasting.",
     gradient: "from-emerald-500 to-green-600",
   },
 ];

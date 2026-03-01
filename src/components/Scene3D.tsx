@@ -154,7 +154,7 @@ function ResponsiveCamera() {
 
   useEffect(() => {
     // Push camera further back on small screens so globe appears smaller
-    const z = size.width < 640 ? 11 : size.width < 768 ? 8.5 : 6;
+    const z = size.width < 640 ? 7 : size.width < 768 ? 7.5 : 6;
     camera.position.setZ(z);
     camera.updateProjectionMatrix();
   }, [camera, size.width]);
@@ -172,7 +172,7 @@ export default function Scene3D() {
   return (
     <div className="absolute inset-0 opacity-60">
       <Canvas
-        camera={{ position: [0, 0, isMobile ? 11 : 6], fov: 45 }}
+        camera={{ position: [0, 0, isMobile ? 7 : 6], fov: 45 }}
         gl={{ antialias: true, alpha: true }}
         style={{ background: "transparent" }}
       >
