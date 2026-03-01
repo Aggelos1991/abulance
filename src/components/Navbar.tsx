@@ -52,7 +52,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="text-base sm:text-xl font-bold text-cream-50 tracking-tight leading-tight">
-                IQ Driver <span className="text-glow-cyan">Ambulette</span>
+                IQ <span className="text-glow-cyan">Mobility</span>
               </span>
               <span className="text-[9px] text-cream-200/40 tracking-widest uppercase">by IQ TAXI</span>
             </div>

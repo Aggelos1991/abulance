@@ -5,8 +5,8 @@ import { useState } from "react";
 
 const faqs = [
   {
-    q: "What is IQ Driver Ambulette?",
-    a: "Your all-in-one control center for non-emergency medical transportation. Scheduling, dispatching, billing, and tracking — all in one place.",
+    q: "What is IQ Mobility?",
+    a: "Your all-in-one control center for non-emergency medical transportation. Scheduling, dispatching, billing, and tracking — all in one place. IQ Driver Ambulette is the dedicated driver app.",
   },
   {
     q: "Which brokers does it connect with?",

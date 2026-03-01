@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "IQ Driver Ambulette | Smart NEMT Platform",
+  title: "IQ Mobility | Smart NEMT Platform",
   description:
     "One smart platform for all your medical transportation needs. AI-powered scheduling, dispatch, billing and more for non-emergency medical transportation.",
   keywords: [
@@ -26,15 +26,15 @@ export const metadata: Metadata = {
     icon: "/favicon.svg",
   },
   openGraph: {
-    title: "IQ Driver Ambulette | Smart NEMT Platform",
+    title: "IQ Mobility | Smart NEMT Platform",
     description:
       "AI-powered scheduling, dispatch, and billing — built for NEMT providers, brokers, and transportation companies.",
-    siteName: "IQ Driver Ambulette",
+    siteName: "IQ Mobility",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "IQ Driver Ambulette | Smart NEMT Platform",
+    title: "IQ Mobility | Smart NEMT Platform",
     description:
       "AI-powered scheduling, dispatch, and billing — built for NEMT providers, brokers, and transportation companies.",
   },

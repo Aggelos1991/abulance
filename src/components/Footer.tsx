@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-white/5 pt-12 pb-8">
+    <footer id="contact" className="relative border-t border-white/5 pt-12 pb-8">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Top row: Logo + Links */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-10">
@@ -18,7 +18,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col">
               <span className="text-sm font-semibold text-cream-200/60">
-                IQ Driver Ambulette
+                IQ Mobility
               </span>
               <span className="text-[9px] text-cream-200/30 tracking-widest uppercase">by IQ TAXI</span>
             </div>
@@ -75,7 +75,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="pt-6 border-t border-white/5 text-center text-xs text-cream-200/30">
-          &copy; {new Date().getFullYear()} IQ Driver Ambulette. All rights reserved.
+          &copy; {new Date().getFullYear()} IQ Mobility. All rights reserved.
         </div>
       </div>
     </footer>

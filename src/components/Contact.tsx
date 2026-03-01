@@ -56,7 +56,7 @@ export default function Contact() {
             </span>
           </h2>
           <p className="text-cream-200/60 text-sm">
-            See how IQ Driver Ambulette can streamline your operations.
+            See how IQ Mobility can streamline your operations.
           </p>
         </motion.div>
 

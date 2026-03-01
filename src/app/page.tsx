@@ -7,7 +7,6 @@ import Integrations from "@/components/Integrations";
 import Results from "@/components/Results";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -22,7 +21,6 @@ export default function Home() {
       <Results />
       <Testimonials />
       <FAQ />
-      <Contact />
       <Footer />
     </>
   );
