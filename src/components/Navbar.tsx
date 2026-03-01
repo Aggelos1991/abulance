@@ -8,7 +8,7 @@ const navLinks = [
   { href: "#integrations", label: "Integrations" },
   { href: "#results", label: "Results" },
   { href: "#faq", label: "FAQ" },
-  { href: "#contact", label: "Contact" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -74,7 +74,7 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="#contact"
+              href="/contact"
               className="px-5 py-2.5 text-sm font-semibold text-cream-50 bg-gradient-to-r from-glow-blue to-glow-cyan rounded-full hover:shadow-lg hover:shadow-glow-blue/30 transition-all duration-300 hover:scale-105"
             >
               Request Demo
@@ -123,7 +123,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="#contact"
+                href="/contact"
                 onClick={() => setMobileOpen(false)}
                 className="mt-2 px-5 py-3 text-center font-semibold text-cream-50 bg-gradient-to-r from-glow-blue to-glow-cyan rounded-full"
               >

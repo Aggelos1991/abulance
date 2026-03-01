@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <footer id="contact" className="relative border-t border-white/5 pt-12 pb-8">
+    <footer className="relative border-t border-white/5 pt-12 pb-8">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Top row: Logo + Links */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-10">
@@ -29,7 +29,7 @@ export default function Footer() {
             <a href="#features" className="hover:text-cream-200/70 transition-colors">Features</a>
             <a href="#integrations" className="hover:text-cream-200/70 transition-colors">Integrations</a>
             <a href="#faq" className="hover:text-cream-200/70 transition-colors">FAQ</a>
-            <a href="#contact" className="hover:text-cream-200/70 transition-colors">Contact</a>
+            <a href="/contact" className="hover:text-cream-200/70 transition-colors">Contact</a>
           </div>
         </div>
 
